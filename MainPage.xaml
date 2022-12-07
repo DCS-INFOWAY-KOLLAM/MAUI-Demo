@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             xmlns:customControls="clr-namespace:OutlinedEntryControlDemo.CustomControls"
+             x:Class="OutlinedEntryControlDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="5" 
+            Padding="30,0"
+            VerticalOptions="Center">
+               
+
+            <Image
+                Source="hii.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+            <Label Text="Welcome!" FontSize="28"  TextColor="Gray" HorizontalTextAlignment="Center" />
+            <Label Text="Login to your account" HeightRequest="100" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
+
+            <customControls:OutlinedEntryControl  Placeholder="Username" />
+            <customControls:OutlinedEntryControl Placeholder="Password" HeightRequest="70"/>
+            <Button
+                x:Name="CounterBtn"
+                Text="Login"
+                SemanticProperties.Hint="Click here to Login"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
