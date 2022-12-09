@@ -20,8 +20,11 @@
             <Label Text="Welcome!" FontSize="28"  TextColor="Gray" HorizontalTextAlignment="Center" />
             <Label Text="Login to your account" HeightRequest="100" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
 
-            <customControls:OutlinedEntryControl  Placeholder="Username" />
+            <customControls:OutlinedEntryControl HeightRequest="60" Placeholder="Username" />
             <customControls:OutlinedEntryControl Placeholder="Password" HeightRequest="70"/>
+
+   
+            
             <Button
                 x:Name="CounterBtn"
                 Text="Login"
